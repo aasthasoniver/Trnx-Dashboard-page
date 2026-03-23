@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   cacheDir: '.vite',
+  server: {
+    host: true,
+  },
 })
